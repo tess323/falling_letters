@@ -43,7 +43,8 @@ function createSpan(){
 // make letters fall using animation 
 function lettersFall(){
 	var letterSpan = createSpan()
-	letterSpan.animate({'top':'95%'}, 7000)
+	letterSpan.animate({'top':'105%'}, 7000)
+	letterSpan.fadeOut( [1200] )
 }
 // make letters disappear when you strike the key
 function removeLetter(pressedKey){
@@ -54,10 +55,12 @@ function removeLetter(pressedKey){
 }
 
 // multiple letters
-// setInterval(lettersFall,1000)
+setInterval(lettersFall,1000)
 
 // letters disappear when you hit the bottom of the screen
+function removeSpan(){
 
+}
 
 
 //timer
