@@ -10,3 +10,7 @@
     -moz-transform: translateZ(0);
     transform: translateZ(0);
 }
+
+span{
+	font-size: 25px;
+}
