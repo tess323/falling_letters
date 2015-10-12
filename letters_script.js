@@ -1,20 +1,28 @@
-var letters= 'A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z';
+// random letter generator
+function letterGen(len)
+{
+    var text = " ";
 
-// function randomNumber(max){
-// 	var randomNumber =Math.random();
-// 	var numExpanded = randomNumber * max;
-// 	var numFloored = Math.floor(numExpanded);
-// 	return numFloored;
-// }
+    var charset = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-var randomNumber=Math.floor(Math.random()*27)
+    for( var i=0; i < len; i++ )
+        text += charset.charAt(Math.floor(Math.random() * charset.length));
 
-
-
-$(document).ready(function(){
-function printLetters(){
-    // console.log(letters);
+    return text;
 }
 
+// call letterGen for 1 letter
+function randomLetter(){
+	letterGen(1);
+
+}
+
+// Create a span to put that letter in
+
+// function 
+
+$(document).ready(function(){
+	randomLetter();
+	
 });
-// return a random number
+
