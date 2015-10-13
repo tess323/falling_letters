@@ -1,6 +1,7 @@
 // random number generator to dictate span spacing
 // var score = document.getElementById('score');
-var count = 0
+var count = 
+
 
 
 function randomNumber(max){
@@ -49,7 +50,7 @@ function lettersFall(){
 	var letterSpan = createSpan()
 	letterSpan.animate({'top':'105%'}, 7000)
 	letterSpan.hide( [1200] )
-}
+	}
 
 // increase speed
 
@@ -76,9 +77,9 @@ function removeLetter(pressedKey){
 
 
 // multiple letters
-setInterval(lettersFall,1000)
+setInterval(lettersFall,1000);
 
-
+setTimeout(lettersFall(){ alert("Congrats! You caught "+ count +"letters");},3000);
 
 
 //timer
@@ -88,11 +89,9 @@ setInterval(lettersFall,1000)
 
 
 $(document).ready(function(){
-	var score = document.getElementById('score');
 	letterGen();
 	// createSpan();
 	lettersFall();
-	// increaseSpeed();
 	removeLetter();
 });
 
