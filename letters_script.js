@@ -26,7 +26,7 @@ function letterGen(len)
 
 // Create a span to put that letter in
 function createSpan(){
-	var span = $('<span></span>');
+	var span = $('<span/>');
 	span.css('position','absolute');
 	span.css('top',0);
 	randomPercent = randomNumber(100)+'%';
@@ -44,14 +44,18 @@ function createSpan(){
 function lettersFall(){
 	var letterSpan = createSpan()
 	letterSpan.animate({'top':'105%'}, 7000)
-	letterSpan.fadeOut( [1200] )
+	letterSpan.hide( [1200] )
 }
 // make letters disappear when you strike the key
 function removeLetter(pressedKey){
 	var typedLetter = String.fromCharCode(pressedKey.keyCode);
 	var letterSpan  = $("span:contains("+typedLetter+")").first();
-
 	letterSpan.remove();
+}
+
+// keep track of score
+function increaseScore(){
+	$('#score').innerHTML = parseInt(score.innerHTML) + 1
 }
 
 // multiple letters
@@ -67,7 +71,7 @@ function removeSpan(){
 
 // speed up when you get 20 correct
 
-// keep track of score
+
 
 $(document).ready(function(){
 	letterGen();
@@ -78,4 +82,5 @@ $(document).ready(function(){
 });
 
 $(document).on("keyup", removeLetter);
+
 

@@ -1,6 +1,10 @@
 /*!
  * 3D Falling Leaves
  */
+ body{
+ 	background-color: #F0EAD6;
+
+ }
 
 .october-leaf {
     position: absolute;
@@ -12,6 +16,14 @@
 }
 
 span{
-	font-size: 25px;
-	color: #900000  ;
+	font-size: 30px;
+	color: #A00000 ;
+
+}
+
+.well{
+	float: right;
+	width: 200px;
+	font-size: 30px;
+	margin-top: 520px;
 }
