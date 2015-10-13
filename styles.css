@@ -27,3 +27,28 @@ span{
 	font-size: 30px;
 	margin-top: 520px;
 }
+
+.jumbotron{
+	padding-top: 300px;
+	padding-bottom: 300px;
+	text-align: center;
+	height: 500px
+}
+
+img{
+	width: 600px;
+	height:600px;
+}
+
+#startPage{
+	/*border-radius: 50px;
+*/	background-image: url('https://unsplash.com/photos/CbyG54CmWXg/download');
+	text-align: center;
+	color:white;
+	width: 700px;
+	height: 700px;
+	padding: 200px;
+	position:relative;
+	border-radius: 50%;
+
+}

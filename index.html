@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Falling Letters</title>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link href="styles.css" rel="stylesheet">
@@ -10,17 +10,18 @@
     <script src="scripts.js" type="text/javascript"></script>
     <script src= 'letters_script.js'type="text/javascript"></script>
 </head>
-
 <body>
-<div class="container">
-    
-   <h1> Falling Letters </h1>
-    <!-- <p><a href="javascript:;" onclick="$(document).octoberLeaves('start')">Start</a></p>
-    <p><a href="javascript:;" onclick="$(document).octoberLeaves('stop')">Stop</a></p> -->
+<div id = 'startPage'class="container">
+<!-- <img src='https://unsplash.com/photos/6xqAK6oAeHA/download' alt="..." class="img-circle"> --> 
 
-    <div class="well well-lg">Score:<p id = 'score'> 0 </p></div>
-    <script> jQuery(document).octoberLeaves() </script>
+<h1 class = 'instructions'>Lets play falling letters</h1>
+            <p class = 'instructions'>Type the falling colors as fast as you can to make them disappear!</p>
+            <p>
+                <a class="btn btn-primary btn-lg" href = 'game.html'>Beginner</a>
+                <a class="btn btn-primary btn-lg" href="expertGame.html">Expert</a>
+            </p>
 
-    </div>
+
+</div>
 </body>
 </html>
