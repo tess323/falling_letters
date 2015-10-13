@@ -2,7 +2,8 @@
  * 3D Falling Leaves
  */
  body{
- 	background-color: #F0EAD6;
+ 	background-color: #FFFAF0;
+ 	font-family: 'Abril Fatface', cursive;
 
  }
 
@@ -42,7 +43,7 @@ img{
 
 #startPage{
 	/*border-radius: 50px;
-*/	background-image: url('https://unsplash.com/photos/CbyG54CmWXg/download');
+*/	background-image: url('http://i.imgur.com/jAYX3tN.jpg?2');
 	text-align: center;
 	color:white;
 	width: 700px;
@@ -51,4 +52,9 @@ img{
 	position:relative;
 	border-radius: 50%;
 
+}
+
+.btn{
+	background: grey;
+	margin: 20px;
 }

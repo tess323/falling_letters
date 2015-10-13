@@ -51,6 +51,13 @@ function lettersFall(){
 	letterSpan.hide( [1200] )
 }
 
+// increase speed
+
+function increaseSpeed{
+	var letterSpan = createSpan()
+	letterSpan.animate({'top':'105%'},4000)
+}
+
 // make letters disappear when you strike the key
 function removeLetter(pressedKey){
 	var typedLetter = String.fromCharCode(pressedKey.keyCode);
@@ -85,8 +92,8 @@ $(document).ready(function(){
 	letterGen();
 	// createSpan();
 	lettersFall();
+	// increaseSpeed();
 	removeLetter();
-	// increaseScore();
 });
 
 $(document).on("keyup", removeLetter);
