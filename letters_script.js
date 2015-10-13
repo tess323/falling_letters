@@ -1,4 +1,8 @@
 // random number generator to dictate span spacing
+// var score = document.getElementById('score');
+var count = 0
+
+
 function randomNumber(max){
 	var randomNum = Math.random();
 	var numToMax = randomNum * max;
@@ -46,25 +50,22 @@ function lettersFall(){
 	letterSpan.animate({'top':'105%'}, 7000)
 	letterSpan.hide( [1200] )
 }
+
 // make letters disappear when you strike the key
 function removeLetter(pressedKey){
 	var typedLetter = String.fromCharCode(pressedKey.keyCode);
 	var letterSpan  = $("span:contains("+typedLetter+")").first();
 	letterSpan.remove();
+	count++;
+	$('#score').html(count);
+
 }
 
-// keep track of score
-function increaseScore(){
-	$('#score').innerHTML = parseInt(score.innerHTML) + 1
-}
 
 // multiple letters
 setInterval(lettersFall,1000)
 
-// letters disappear when you hit the bottom of the screen
-function removeSpan(){
 
-}
 
 
 //timer
@@ -74,11 +75,12 @@ function removeSpan(){
 
 
 $(document).ready(function(){
+	var score = document.getElementById('score');
 	letterGen();
 	// createSpan();
 	lettersFall();
 	removeLetter();
-	
+	// increaseScore();
 });
 
 $(document).on("keyup", removeLetter);
