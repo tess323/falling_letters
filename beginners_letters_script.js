@@ -1,6 +1,6 @@
 // random number generator to dictate span spacing
 // var score = document.getElementById('score');
-var count = 
+var count = 0;
 
 
 
@@ -52,39 +52,59 @@ function lettersFall(){
 	letterSpan.hide( [1200] )
 	}
 
-// increase speed
-
-function increaseSpeed{
-	var letterSpan = createSpan()
-	letterSpan.animate({'top':'105%'},4000)
-}
-
+// 
 // make letters disappear when you strike the key
 function removeLetter(pressedKey){
 	var typedLetter = String.fromCharCode(pressedKey.keyCode);
 	var letterSpan  = $("span:contains("+typedLetter+")").first();
+	console.log(letterSpan.html());
 	letterSpan.remove();
-	count++;
-	$('#score').html(count);
-	// var letterSpan = createSpan();
-	// if (typedLetter.val() === letterSpan){
-	// 	letterSpan.remove();
-	// 	count++;
-	// $('#score').html(count);
-	// }
+	console.log(letterSpan)
+	if (!!letterSpan.html()){
+		count++;
+		$('.score').html(count);
+		console.log('hey');
+	}
+	
 
+		if (count<=5){
+		$('.well').css('color', '#006600')
+			}
+	else if (count<=10){
+		$('.well').css('color', '#009933')
+			}
+	else if (count<=15) {
+		$('.well').css('color', '#FFCC00')
+		}
+	else if (count<=20) {
+		$('.well').css('color', '#FF9900')
+		}	
+	else if (count<=30) {
+		$('.well').css('color', '#CC7A00')
+		}
+	else if (count<=40){
+		$('.well').css('color','#CC3300')
+		}
+	else if (count<=45){
+		$('.well').css('color','#993300')
+		}
+	else if (count<=50){
+		$('.well').css('color','#990000')
+		}
+	else if (count<=55){
+		$('.well').css('color','#800000')
+		}
 }
 
 
 // multiple letters
-setInterval(lettersFall,1000);
+var intervalId = setInterval(lettersFall, 1000);
 
-setTimeout(lettersFall(){ alert("Congrats! You caught "+ count +"letters");},3000);
+var timeoutId = setTimeout(function(){
+		clearInterval(intervalId);
+		alert("Congrats! You caught " + count + " letters");
+	}, 60000);
 
-
-//timer
-
-// speed up when you get 20 correct
 
 
 
@@ -92,7 +112,6 @@ $(document).ready(function(){
 	letterGen();
 	// createSpan();
 	lettersFall();
-	removeLetter();
 });
 
 $(document).on("keyup", removeLetter);
