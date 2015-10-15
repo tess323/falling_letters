@@ -47,8 +47,8 @@ function createSpan(){
 // make letters fall using animation 
 function lettersFall(){
 	var letterSpan = createSpan()
-	letterSpan.animate({'top':'105%'}, 9000)
-	letterSpan.hide( [1200] )
+	letterSpan.animate({'top':'105%'}, 4000)
+	letterSpan.hide( [1000] )
 	}
 
 // 
@@ -97,7 +97,7 @@ function removeLetter(pressedKey){
 
 
 // multiple letters
-var intervalId = setInterval(lettersFall, 1200);
+var intervalId = setInterval(lettersFall, 700);
 
 // end game
 
@@ -107,7 +107,7 @@ var timeoutId = setTimeout(function(){
 			title: "Congrats!",
 			text: " You caught " + count + " letters",
 			confirmButtonText:"Play again!"});
-		location.reload();
+			location.reload();
 	}, 60000);
 
 
@@ -118,5 +118,3 @@ $(document).ready(function(){
 });
 
 $(document).on("keyup", removeLetter);
-
-
