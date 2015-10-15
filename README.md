@@ -15,6 +15,7 @@ Technologies Used:
 	-jQuery Animations
 	-jQuery Plugin
 	-Sweet Alert
+	-Bootstrap
 
 Next steps:
 
