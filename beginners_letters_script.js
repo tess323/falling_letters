@@ -108,7 +108,7 @@ var timeoutId = setTimeout(function(){
 			text:" You caught " + count + " letters",
 			confirmButtonText:"Play again!"});
 		location.reload();
-	}, 10000);
+	}, 60000);
 
 
 // play the game
