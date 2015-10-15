@@ -105,10 +105,10 @@ var timeoutId = setTimeout(function(){
 		clearInterval(intervalId);
 		swal({
 			title: "Congrats!",
-			text: " You caught " + count + " letters",
+			text:" You caught " + count + " letters",
 			confirmButtonText:"Play again!"});
 		location.reload();
-	}, 60000);
+	}, 10000);
 
 
 // play the game
