@@ -8,6 +8,13 @@ Process:
 
 I was hoping to use this as a chance to create a polished project with DRY code that allowed me to practice Jquery animation, which I had not made it to on previous homework assignments.  By far the hardest aspect of this project was using the keyup function and codeKey.
 
+Technologies Used: 
+	-HTML
+	-CSS
+	-jQuery
+	-jQuery Animations
+	-jQuery Plugin
+	-Sweet Alert
 
 Next steps:
 
