@@ -1,4 +1,4 @@
-Front End Game
+<head>Front End Game</head>
 
 Falling Letters:
 
