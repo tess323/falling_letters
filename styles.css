@@ -26,16 +26,17 @@ span{
 	float: right;
 	width: 300px;
 	font-size: 30px;
-	margin-top: 520px;
+	margin-top: 530px;
 	background: #FFFAF0;
 	border:0;
 }
 
 .jumbotron{
+	position: absolute;
 	padding-top: 300px;
 	padding-bottom: 300px;
 	text-align: center;
-	height: 500px
+	height: 465px;
 }
 
 img{
