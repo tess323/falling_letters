@@ -1,14 +1,11 @@
 <head>Front End Game</head>
 
-Falling Letters:
+<h1>Falling Letters:</h1>
 
-Practice your typing by striking the coresponding letter as they fall.  There are two levels - a light breeze and strong gusts!  Letters fall slower with a light breeze and much faster with strong gusts.  
+Practice your typing by striking the coresponding letter as they fall.  There are two levels - a light breeze and strong gusts!  Letters fall slower with a light breeze and much faster with strong gusts.  This was my first vanilla javascript project.  
 
-Process:
 
-I was hoping to use this as a chance to create a polished project with DRY code that allowed me to practice Jquery animation, which I had not made it to on previous homework assignments.  By far the hardest aspect of this project was using the keyup function and codeKey.
-
-Technologies Used: 
+<h1>Technologies Used: </h1>
 	-HTML
 	-CSS
 	-jQuery
@@ -17,12 +14,12 @@ Technologies Used:
 	-Sweet Alert
 	-Bootstrap
 
-Next steps:
+<h1>Next steps:</h1>
 
-I would like to add another level to this game that is randomized scrolling words.  I have begun work on this, but it wasn't polished enough for presentation.  I hope to include it in my final portfolio.
+This project was created in only a few days and the speed of the General Assembly course did not allow for TDD while building this project. 
 
-Sources:
+<h1>Sources:</h1>
 
-falling leaves plugin:
-* [View demonstration](http://daftspunk.github.io/3d-falling-leaves/)
+<a href="http://daftspunk.github.io/3d-falling-leaves/">Falling Leaves Plugin</a>
+
 
